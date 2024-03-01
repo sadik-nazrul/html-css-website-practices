@@ -119,6 +119,11 @@ img{
     border-radius: 1.5rem;
 }
 
+.relative{
+    position: relative;
+    overflow: hidden
+}
+
 .shadow{
     box-shadow: -2px 2px 15px 2px rgba(43,41,41,0.21);
 }
@@ -138,6 +143,31 @@ img{
     width: 100px;
 }
 
+/* Partners Style */
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+.logos{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos:hover .logo-slide{
+    animation-play-state: paused;
+}
+.logo-slide{
+    display: inline-block;
+    animation: 5s slide infinite linear;
+}
+.logo-slide>img{
+    padding: 0 1rem;
+    margin: 0 40px;
+}
 
 
 
@@ -162,7 +192,7 @@ img{
     .nav{
         justify-items: center;
     }
-    
+
     .navigation{
         justify-content: center;
     }
