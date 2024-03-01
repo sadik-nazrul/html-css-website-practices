@@ -169,6 +169,17 @@ img{
     margin: 0 40px;
 }
 
+/* Collection Style */
+.item{
+    padding: 1.5rem 1rem;
+    border-radius: .7rem;
+}
+.item-image>img{
+    width: 338px;
+}
+img.rating {
+    width: fit-content;
+}
 
 
 
@@ -177,10 +188,11 @@ img{
 @media screen and (max-width: 576px){
     /* Reusable */
     .container{
-        width: 400px;
+        width: 320px;
+        padding: 2rem 1rem;
     }
 
-    .col2{
+    .col2, .col3{
         grid-template-columns: 1fr;
     }
     
@@ -202,11 +214,16 @@ img{
         text-align: center;
     }
 
-    .hero-intro > div >.btn{
-        margin: 0 auto;
+    body > div.container.grid.col2.gap > div.hero-intro.flex.col-dir.content-center.gap > div {
+        text-align: center;
     }
 
     .hero-banner{
         grid-row: 1;
+    }
+
+    /* Partners Style */
+    body > div:nth-child(3){
+        padding: .8rem;
     }
 }
