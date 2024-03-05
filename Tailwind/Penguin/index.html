@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Penguin Fashion</title>
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+    }
+    .font-roboto{
+        font-family: "Roboto", sans-serif;
+    }
+    .grid-col-order-1{
+        grid-column: 1;
+    }
+
+    </style>
+
+</head>
+<body>
+    <header class="bg-[#FFFBF0]">
+        <!-- NavBar Start -->
+        <nav class="container mx-auto">
+            <div class="flex flex-col lg:flex-row lg:justify-between items-center max-w-full gap-5 py-5 lg:py-8">
+                <div class="w-1/2 lg:w-1/4"><img src="./assets/logo.png" alt="" class="max-w-full"></div>
+                <div>
+                    <ul class="flex items-center gap-6 lg:gap-10">
+                        <li class="font-roboto">Home</li>
+                        <li class="font-roboto">Products</li>
+                        <li class="font-roboto">About Us</li>
+                        <li class="font-roboto">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section Start -->
+        <div class="container my-0 mx-auto py-5 lg:py-14">
+            <div class="flex flex-col-reverse lg:flex-row lg:justify-between items-center">
+                <div class="flex flex-col gap-3">
+                    <h2 class="font-bebas text-3xl lg:text-6xl">Be the penguins of winter</h2>
+                    <p class="font-roboto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, excepturi.</p>
+                    <div>
+                        <button class="bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-3 px-5 bg-[] text-white flex gap-2 rounded-lg">
+                            <i class="ri-shopping-cart-fill"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/banner image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Women Jacket Collection -->
+        <div class="container my-0 mx-auto flex flex-col gap-6 py-5 lg:py-14">
+            <div>
+                <h2 class="font-bebas text-2xl lg:text-5xl">Womens Jacket</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 rounded-lg gap-5">
+
+                <!-- Card 1 -->
+                <div class="p-5 shadow-md flex flex-col justify-between rounded-lg">
+                    <div class="py-3 flex flex-col gap-3">
+                        <img class="bg-[#F1F1F1] p-6 rounded-lg" src="./assets/Yellow Coat Jacket .png" alt="">
+                        <h2 class="font-roboto font-semibold text-2xl">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quidem.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="font-roboto font-bold text-3xl text-[#85A019]">$234</h3>
+                        <button class="bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-3 px-5 bg-[] text-white flex gap-2 rounded-lg">
+                            <i class="ri-shopping-cart-fill"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-5 shadow-md flex flex-col justify-between rounded-lg">
+                    <div class="py-3 flex flex-col gap-3">
+                        <img class="bg-[#F1F1F1] p-6 rounded-lg" src="./assets/Ladies Jacket.png" alt="">
+                        <h2 class="font-roboto font-semibold text-2xl">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quidem.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="font-roboto font-bold text-3xl text-[#85A019]">$234</h3>
+                        <button class="bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-3 px-5 bg-[] text-white flex gap-2 rounded-lg">
+                            <i class="ri-shopping-cart-fill"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-5 shadow-md flex flex-col justify-between rounded-lg">
+                    <div class="py-3 flex flex-col gap-3">
+                        <img class="bg-[#F1F1F1] p-6 rounded-lg" src="./assets/Woman Leather Jacket.png" alt="">
+                        <h2 class="font-roboto font-semibold text-2xl">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quidem.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="font-roboto font-bold text-3xl text-[#85A019]">$234</h3>
+                        <button class="bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-3 px-5 bg-[] text-white flex gap-2 rounded-lg">
+                            <i class="ri-shopping-cart-fill"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Man Jacket Collection -->
+        <div class="container my-0 mx-auto flex flex-col gap-6 py-5 lg:py-14">
+            <div>
+                <h2 class="font-bebas text-2xl lg:text-5xl">Mans Jacket</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 rounded-lg gap-5">
+
+                <!-- Card 1 -->
+                <div class="p-5 shadow-md flex flex-col justify-between rounded-lg">
+                    <div class="py-3 flex flex-col gap-3">
+                        <img class="bg-[#F1F1F1] p-6 rounded-lg lg:h-96" src="./assets/Snowboard Jacket Mens.png" alt="">
+                        <h2 class="font-roboto font-semibold text-2xl">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quidem.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="font-roboto font-bold text-3xl text-[#85A019]">$234</h3>
+                        <button class="bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-3 px-5 bg-[] text-white flex gap-2 rounded-lg">
+                            <i class="ri-shopping-cart-fill"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-5 shadow-md flex flex-col justify-between rounded-lg">
+                    <div class="py-3 flex flex-col gap-3">
+                        <img class="bg-[#F1F1F1] p-6 rounded-lg lg:h-96" src="./assets/Man Leather Jackets.png" alt="">
+                        <h2 class="font-roboto font-semibold text-2xl">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quidem.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="font-roboto font-bold text-3xl text-[#85A019]">$234</h3>
+                        <button class="bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-3 px-5 bg-[] text-white flex gap-2 rounded-lg">
+                            <i class="ri-shopping-cart-fill"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-5 shadow-md flex flex-col justify-between rounded-lg">
+                    <div class="py-3 flex flex-col gap-3">
+                        <img class="bg-[#F1F1F1] p-6 rounded-lg lg:h-96" src="./assets/Man Casual Jackets.png" alt="">
+                        <h2 class="font-roboto font-semibold text-2xl">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quidem.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="font-roboto font-bold text-3xl text-[#85A019]">$234</h3>
+                        <button class="bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-3 px-5 bg-[] text-white flex gap-2 rounded-lg">
+                            <i class="ri-shopping-cart-fill"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="container my-0 mx-auto flex flex-col gap-6 py-5 lg:py-14">
+            <div class="grid lg:grid-cols-3 items-center justify-between gap-8">
+                <div class="col-span-2 items-center justify-between gap-8">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col shadow-md p-5 rounded-lg gap-6">
+                            <div class="flex items-center gap-6">
+                                <img class="w-20" src="./assets/Perfect Fit.png
+                                " alt="">
+                                <div class="flex-flex-col gap-4">
+                                    <h2 class="font-roboto text-2xl">Find The Perfect Fit</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, modi!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col shadow-md p-5 rounded-lg gap-6">
+                            <div class="flex items-center gap-6">
+                                <img class="w-20" src="./assets/Free Exchanges.png" alt="">
+                                <div class="flex-flex-col gap-4">
+                                    <h2 class="font-roboto text-2xl">Find The Perfect Fit</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, cupiditate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col shadow-md p-5 rounded-lg gap-6">
+                            <div class="flex items-center gap-6">
+                                <img class="w-20" src="./assets/contacts.png" alt="">
+                                <div class="flex-flex-col gap-4">
+                                    <h2 class="font-roboto text-2xl">Find The Perfect Fit</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-end-1">
+                    <img src="./assets/banner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
